@@ -48,19 +48,24 @@ The question that comes to mind is wherther certain wards in Ottawa have a highe
 
 ### 3.1. VIMO Analysis
 
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
+I will focus on the three columns for my VIMO analysis: "Column J: Ward", "Column C: Type of requests" and "Column K: Channels".  For column J, We find a lot of values in this colum marked as "\N" which is missing data. Missing ward data could hinder the readers ability to determine the distribution of the service requests [(Statistics Canada, 2020)
+](https://apastyle.apa.org/style-grammar-guidelines/citations). There also significantly more requests from Ward 12, which is an outlier because its exptremly large compared to other wards [(Statistics Canada, 2020)
+](https://apastyle.apa.org/style-grammar-guidelines/citations). 
 
-Insert text here.
+For column C, varifying the service requests is important and consistent. Upon looking at the colum stats, there should be no unique values present. The main titles should more or less repeat themselves consistantly. 
 
-Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
+For column K, there's also an outlier, with high proportion of channels in dispatch. 
 
-**For example:**
-
-As Cairo (2016) argues, a data visualization should be truthful...
 
 ### 3.2. Cleaning Data
 
-Insert text here.
+I implemented several cleaning methods on my data. First, I checked the cleanup suggestions in my sheets and identified an issue with whitespace in Column D. I made the necessary changes and trimmed all the extra whitespace as suggested.
+
+Next, I froze Row C by navigating to the View menu, selecting the Freeze option, and choosing Column C.
+
+Lastly, I used the CONCATENATE function in cell M1 to combine the contents of H10 and J10.
+
+
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
