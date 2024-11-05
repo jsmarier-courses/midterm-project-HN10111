@@ -48,13 +48,13 @@ The question that comes to mind is wherther certain wards in Ottawa have a highe
 
 ### 3.1. VIMO Analysis
 
-I will focus on the three columns for my VIMO analysis: "Column J: Ward", "Column C: Type of requests" and "Column K: Channels".  For column J, We find a lot of values in this colum marked as "\N" which is missing data. Missing ward data could hinder the readers ability to determine the distribution of the service requests [(Statistics Canada, 2020)
-](https://apastyle.apa.org/style-grammar-guidelines/citations). There also significantly more requests from Ward 12, which is an outlier because its exptremly large compared to other wards [(Statistics Canada, 2020)
+I will focus on three key columns for my VIMO analysis: "Column J: Ward," "Column C: Type of Requests," and "Column K: Channels."
+
+In Column J, there are numerous values marked as "\N," indicating missing data. The absence of ward information could hinder the reader's ability to accurately assess the distribution of service requests[(Statistics Canada, 2020)
+](https://apastyle.apa.org/style-grammar-guidelines/citations). Additionally, Ward 12 has significantly more requests, standing out as an outlier due to its exceptionally high volume compared to other wards [(Statistics Canada, 2020)
 ](https://apastyle.apa.org/style-grammar-guidelines/citations). 
 
-For column C, varifying the service requests is important and consistent. Upon looking at the colum stats, there should be no unique values present. The main titles should more or less repeat themselves consistantly. 
-
-For column K, there's also an outlier, with high proportion of channels in dispatch. 
+In Column C, it's crucial to verify the consistency of service request types. After reviewing the column statistics, there should not be many unique values, as the main categories of requests should appear repeatedly in a consistent manner. In Column K, there's another outlier: a disproportionately high number of requests made through the dispatch channel.
 
 
 ### 3.2. Cleaning Data
@@ -65,35 +65,54 @@ Next, I froze Row C by navigating to the View menu, selecting the Freeze option,
 
 Lastly, I used the CONCATENATE function in cell M1 to combine the contents of H10 and J10.
 
+Here are screenshots of the results: 
+
+![Cleaned](CL.png)<br>
+![CO](CO.png)<br>
+*Figure 2: Cleaned Data Sheet* 
 
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+I chose to analyze the frequency of service requests by ward because it provides insights into where the demand for services is highest in Ottawa. Understanding this aspect helps identify areas that may need more resources or attention.
 
-**This section should include a screen capture of your pivot table, like so:**
+As I reviewed the table, I found it interesting that Ward 12 was the only one with two data-in channels, and it had the highest numbers in dispatch, email requests, and voice-ins. However, it did not rank first in walk-ins or web requests. This suggests a particular demographic in Ward 12 is more likely to make calls through these channels. In the next step, I want to investigate which ward makes the fewest calls, how they make them when they do, and the reasons behind that.
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+I didn’t find much information about the residents of Rideau-Vanier, but I did come across a few articles that might suggest a potential story. There seems to be a lack of economic progress in that area, with reports indicating that the housing market is struggling compared to other parts of Ottawa. It consistently ranks low in housing metrics, and the industry and high-tech sectors have largely overlooked the district (Bagnall, 2017).
 
-**This section should also include a screen capture of your exploratory chart, like so:**
+Another interesting factor that may explain the high number of calls from this ward is the presence of a dedicated ward councillor who has lived there for over 20 years. The source indicates that she is actively involved in helping her community and is passionate about ensuring that the ward is safe and welcoming, making it comfortable for residents to walk around without concerns (La Ville d'Ottawa, n.d.).
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+The ward appears to lean toward a more conservative, closed-off atmosphere, which may be conducive to settling for older demographics.
+
+**A screen capture of the pivot table:**
+
+![Pivottable](Pivottable.png)<br>
+*Figure 2: This pivot table shows the corralation between the number of services request and specific wards.*
+
+**A screen capture of the exploratory chart:**
+
+![Exploratory chart](EC.png)<br>
+*Figure 3: This exploratory chart shows the corralation between the number of services request and specific wards.*
 
 ## 4. Potential Story
 
-Insert text here.
+The potential story revolves around the significant presence of an older demographic in Ward 12, which influences the way service requests are made. Many of these residents may not be as comfortable using web-based services, making it more challenging for them to submit requests online. As a result, they tend to rely on phone calls and dispatch services, which could explain the higher frequency of service requests in these categories.
+
+This situation highlights the barriers that older adults face when accessing services, revealing a need for more user-friendly options tailored to their preferences. It suggests that the local government and community organizations should consider initiatives aimed at improving digital literacy among seniors or providing more accessible alternatives for submitting requests.
+
+Furthermore, the role of a dedicated ward councillor, who is active in the community and focused on ensuring a safe and welcoming environment, could be pivotal in addressing these issues. Her efforts may help bridge the gap for elderly residents, ensuring they receive the support they need without the additional hurdles of technology or transportation.
 
 ## 5. Conclusion
 
-Insert text here.
+In conclusion, I've gained valuable experience in the journalistic process of extracting an engaging story from numbers and data logs. This assignment certainly presented its own set of challenges, particularly in creating exploratory charts and visualizing the information. The most rewarding moment was when I finally understood the correlation and saw the insights I could draw from the data. Moving forward, I would encourage myself to conduct more research on the correlations I discover and explore how they can deepen my analysis and explanations.
 
 ## 6. References
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
+Bagnall, J. (2017, November 12). The puzzle of Vanier's lack of economic progress. https://ottawacitizen.com/news/local-news/the-puzzle-of-vaniers-lack-of-economic-progress. Retrieved November 4, 2024, from https://ottawacitizen.com/news/local-news/the-puzzle-of-vaniers-lack-of-economic-progress
 
-**Here's an example:**
+La Ville d'Ottawa. (n.d.). Stéphanie Plante - Councillor - Ward 12 Rideau-Vanier. City of Ottawa. Retrieved November 5, 2024, from https://ottawa.ca/en/city-hall/mayor-and-city-councillors/stephanie-plante-councillor-ward-12-rideau-vanier
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+Statistics Canada. (2020, September 23). Data Accuracy and Validation: Methods to ensure the quality of data. Data Accuracy and Validation: Methods to ensure the quality of data. Retrieved November 4, 2024, from https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008
+
+I used AI tools as a coach to enhance my learning, providing me with valuable insight and guidance. 
 
