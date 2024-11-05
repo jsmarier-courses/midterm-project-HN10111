@@ -18,23 +18,14 @@ This report consists of four main sections. First, getting data, I will explain 
 
 ## 2. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+To obtain the necessary data, I began by importing the dataset into Google Sheets. The involved downloading the CSV file from the Github portal. In Google Sheets, I selected "file", then "Import", followed by "Upload" to add my CSV file. After the import, I adjusted the settings to set the delimiter to "Comma", ensuring the columns would displayed correctly. 
 
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
+You can see a results of this process in the screenshot below and in the attached [Google Sheet](https://docs.google.com/spreadsheets/d/1BZ9UBwwG1Ge7Uvxf2ftSpjDnVnBD0zheKhyqrZ12peE/edit?usp=sharing) link: 
 
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
+![GS1](GS1.png)<br>
+*Figure 1: Screenshot of the import process in Google sheets* 
 
-**Here are examples of functions and lines of code put in grey boxes:**
 
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
-
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
 
 ## 3. Understanding Data
 
