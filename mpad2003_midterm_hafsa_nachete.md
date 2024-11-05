@@ -71,7 +71,6 @@ Here are screenshots of the results:
 ![CO](CO.png)<br>
 *Figure 2: Cleaned Data Sheet* 
 
-
 ### 3.3. Exploratory Data Analysis (EDA)
 
 I chose to analyze the frequency of service requests by ward because it provides insights into where the demand for services is highest in Ottawa. Understanding this aspect helps identify areas that may need more resources or attention.
