@@ -25,7 +25,24 @@ You can see a results of this process in the screenshot below and in the attache
 ![GS1](GS1.png)<br>
 *Figure 1: Screenshot of the import process in Google sheets* 
 
+In general observations, the dataset includes 11 columns and 28,539 rows. The column headings provide information such as the status of the request, the type, a description, the opened and closed dates, the adress, latitude, lontitude, the ward, and the channel through which the request was made. At first glance, the data appears to be relatively clean, with no significant issues like missing headers or misplaced information in the wrong columns. 
 
+In terms of specific observations, Column C represents the type of request made, categorized as nominal variables.The data shows 5 caegories:"Garbagde and Recycling", "Bylaw services", "Roads and Transportation", "Water and the Environment" and finally "Parking Control Enforcment". Garbadge and Recycling" seems to be the most in frequency levels, while "Parking Control Enforcment" has the lowest frequency of requests. 
+
+For column D, which describes the service requests in more detail, the most frequent description is related to "Organics - SWC" (Source Waste Collection).
+
+Regarding Column F (Opening Date) and Column G (Closing Date), a significant number of closing dates are marked as "\N," indicating missing data. However, among the completed requests, many were closed on August 28, 2024, while a high number of cases were opened on August 29, 2024, which is an interesting trend to note.
+
+In Column G (Address of Request), the most common entry is "\N," indicating missing data for many records. However, the address "99 Cobourg St" appears 18 times, followed closely by "1000 Airport Parkway Priv" with 11 occurrences.
+
+Looking at Column J (Ward), the highest number of service requests originated from Ward 12 (Rideau-Vanier) and Ward 14 (Somerset).
+
+For Columns H and I (Latitude and Longitude), the majority of geolocated requests are associated with "Roads and Transportation" (4,214 occurrences), with a smaller number linked to "Recreation and Culture" (844 occurrences).
+
+Lastly, in Column K (Channels), most requests were made through dispatch services (13,551 instances), followed by web submissions (12,717), and voice-ins (828). The least common channels were data-in (817) and walk-in requests (498).
+
+### The Hypothesis
+The question that comes to mind is wherther certain wards in Ottawa have a higher frequency of service requests than others. In praticular, does Ward 12 (Rideau-Vanier) consistently report more service requests compraed to other wards, and if so, what might be the reason for this?
 
 ## 3. Understanding Data
 
